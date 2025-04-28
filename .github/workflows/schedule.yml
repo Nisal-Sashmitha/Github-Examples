@@ -1,7 +1,6 @@
 name: Scheduled Hello World
 
 on:
-  workflow_dispatch:
   schedule:
     - cron: '*/2 * * * *'
 
