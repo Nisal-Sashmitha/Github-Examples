@@ -1,4 +1,7 @@
+name: Scheduled Hello World
+
 on:
+  workflow_dispatch:
   schedule:
     - cron: '*/2 * * * *'
 
@@ -8,3 +11,4 @@ jobs:
     steps:
       - name: Echo current time
         run: echo "The current server time is $(date)"
+
